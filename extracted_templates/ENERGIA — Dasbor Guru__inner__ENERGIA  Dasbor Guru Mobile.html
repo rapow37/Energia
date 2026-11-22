@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<title>ENERGIA â Dasbor Guru (Mobile)</title>
+<script src="d0334bc3-8d55-4ff8-8a65-e2eaa0a7647a"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c6daca7e-9073-4f30-b3c2-ffd9e262b325") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("176ba6c9-5da7-472c-8b33-3069060ea80b") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("a29d03a3-e48b-42a5-b9e1-883139e1b2f2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("319ef6dc-9fbf-4035-b4ff-c6e8d0a0e5ef") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("835bc820-6a0b-47a4-9b9e-7c82d60f8ebd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b6262d49-84b8-4326-94f1-67bf31dee235") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e6eb7cfb-7c0c-4cc2-bf52-db695a2d38e7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c6daca7e-9073-4f30-b3c2-ffd9e262b325") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("176ba6c9-5da7-472c-8b33-3069060ea80b") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("a29d03a3-e48b-42a5-b9e1-883139e1b2f2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("319ef6dc-9fbf-4035-b4ff-c6e8d0a0e5ef") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("835bc820-6a0b-47a4-9b9e-7c82d60f8ebd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b6262d49-84b8-4326-94f1-67bf31dee235") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e6eb7cfb-7c0c-4cc2-bf52-db695a2d38e7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c6daca7e-9073-4f30-b3c2-ffd9e262b325") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("176ba6c9-5da7-472c-8b33-3069060ea80b") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("a29d03a3-e48b-42a5-b9e1-883139e1b2f2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("319ef6dc-9fbf-4035-b4ff-c6e8d0a0e5ef") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("835bc820-6a0b-47a4-9b9e-7c82d60f8ebd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b6262d49-84b8-4326-94f1-67bf31dee235") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e6eb7cfb-7c0c-4cc2-bf52-db695a2d38e7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("2d9ae6ce-5e5a-443c-bb0a-efd0eee60be7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("2d9ae6ce-5e5a-443c-bb0a-efd0eee60be7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("2d9ae6ce-5e5a-443c-bb0a-efd0eee60be7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+button{font:inherit}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#F5F7FB;color:#101A35;font-family:Inter,sans-serif;overflow:hidden">
+
+  <header style="position:absolute;top:0;left:0;right:0;height:64px;box-sizing:border-box;background:#fff;border-bottom:1px solid #E1E6F0;padding:0 16px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;gap:10px;align-items:center">
+      <div style="width:32px;height:32px;border-radius:9px;background:#356AE6;display:grid;place-items:center"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg></div>
+      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px">Dashboard</span>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button aria-label="Notifikasi, 3 baru" style="position:relative;width:40px;height:40px;border:1px solid #E1E6F0;border-radius:12px;background:#fff;color:#1D2B50;display:grid;place-items:center"><svg width="19" height="19" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"></path></svg><span style="position:absolute;top:7px;right:8px;width:9px;height:9px;border-radius:9px;background:#FF9F43;border:2px solid #fff"></span></button>
+      <div aria-label="Profil Bu Sari Wulandari" style="width:36px;height:36px;border-radius:18px;background:#1D2B50;color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px">BS</div>
+    </div>
+  </header>
+
+  <div style="position:absolute;top:64px;left:0;right:0;bottom:160px;overflow-y:auto;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px">
+
+    <section>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin:0">Selamat pagi, Bu Sari</h1>
+      <p style="margin:6px 0 0;font-size:14px;line-height:20px;color:#4A5675">3 tugas menunggu penilaian. 1 sesi sedang berjalan.</p>
+    </section>
+
+    <section aria-label="Statistik" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05)">
+        <div style="font-size:13px;color:#4A5675;font-weight:500">Total Kelas</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-top:6px">6</div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05)">
+        <div style="font-size:13px;color:#4A5675;font-weight:500">Total Siswa</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-top:6px">182</div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05)">
+        <div style="font-size:13px;color:#4A5675;font-weight:500">Tugas Aktif</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-top:6px">4</div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;color:#4A5675;font-weight:500">Sesi Berjalan</span><span style="padding:2px 6px;border-radius:6px;background:#FFF1E3;color:#8A4A0B;font-size:11px;font-weight:700">LIVE</span></div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-top:6px">1</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="m-aksi">
+      <h2 id="m-aksi" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0 0 10px">Aksi Cepat</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+        <button style="background:#fff;border:1px solid #E1E6F0;border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:8px;color:#101A35;font-weight:600;font-size:13px;cursor:pointer;min-height:44px"><span style="width:40px;height:40px;border-radius:12px;background:#EEF3FD;color:#2753C4;display:grid;place-items:center"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span>Buat Kelas</button>
+        <button style="background:#fff;border:1px solid #E1E6F0;border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:8px;color:#101A35;font-weight:600;font-size:13px;cursor:pointer;min-height:44px"><span style="width:40px;height:40px;border-radius:12px;background:#FFF1E3;color:#8A4A0B;display:grid;place-items:center"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 12h6M9 16h4"></path></svg></span>Buat Tugas</button>
+        <button style="background:#fff;border:1px solid #E1E6F0;border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:8px;color:#101A35;font-weight:600;font-size:13px;cursor:pointer;min-height:44px"><span style="width:40px;height:40px;border-radius:12px;background:#E6F6EF;color:#1E7D5A;display:grid;place-items:center"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"></path></svg></span>Buat Kuis</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="m-aktivitas" style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:center"><h2 id="m-aktivitas" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0">Aktivitas Kelas</h2><a href="#aktivitas" style="font-size:13px;font-weight:600;color:#2753C4;text-decoration:none">Semua</a></div>
+      <div style="display:flex;gap:12px;padding:12px 0;border-top:1px solid #EEF1F7;margin-top:10px;align-items:flex-start"><span style="width:32px;height:32px;border-radius:9px;background:#E6F6EF;color:#1E7D5A;display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:12px">XI</span><div style="flex:1;font-size:14px"><b>XI IPA 2</b> menyelesaikan Kuis Gerak Lurus<div style="font-size:13px;color:#4A5675;margin-top:2px">26 dari 28 siswa Â· 10 menit lalu</div></div></div>
+      <div style="display:flex;gap:12px;padding:12px 0;border-top:1px solid #EEF1F7;align-items:flex-start"><span style="width:32px;height:32px;border-radius:9px;background:#FFF1E3;color:#8A4A0B;display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:12px">RP</span><div style="flex:1;font-size:14px"><b>Rafi Pratama</b> mengumpulkan tugas<div style="font-size:13px;color:#4A5675;margin-top:2px">Energi Kinetik Â· 1 jam lalu</div></div></div>
+    </section>
+
+    <section aria-labelledby="m-tugas">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 id="m-tugas" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0">Tugas Terbaru</h2><a href="#tugas" style="font-size:13px;font-weight:600;color:#2753C4;text-decoration:none">Semua</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05);display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start"><div style="font-weight:600;font-size:15px">Energi Kinetik dan Potensial</div><span style="padding:4px 8px;border-radius:8px;background:#FFF1E3;color:#8A4A0B;font-weight:600;font-size:12px;white-space:nowrap">Perlu dinilai</span></div>
+          <div style="font-size:13px;color:#4A5675">XI IPA 3 Â· tenggat 18 Nov</div>
+          <div style="height:6px;border-radius:6px;background:#EEF1F7"><div style="width:86%;height:100%;border-radius:6px;background:#356AE6"></div></div>
+          <div style="font-size:13px;color:#4A5675">24 dari 28 terkumpul</div>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05);display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start"><div style="font-weight:600;font-size:15px">Laporan Praktikum Bandul</div><span style="padding:4px 8px;border-radius:8px;background:#EEF3FD;color:#2753C4;font-weight:600;font-size:12px;white-space:nowrap">Berjalan</span></div>
+          <div style="font-size:13px;color:#4A5675">XI IPA 2 Â· tenggat 22 Nov</div>
+          <div style="height:6px;border-radius:6px;background:#EEF1F7"><div style="width:68%;height:100%;border-radius:6px;background:#356AE6"></div></div>
+          <div style="font-size:13px;color:#4A5675">19 dari 28 terkumpul</div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="m-performa" style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.05);display:flex;flex-direction:column;gap:12px">
+      <h2 id="m-performa" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0">Performa Kelas</h2>
+      <div style="font-size:14px"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><span>XI IPA 2</span><b>78</b></div><div style="height:8px;border-radius:8px;background:#EEF1F7"><div style="width:78%;height:100%;border-radius:8px;background:#356AE6"></div></div></div>
+      <div style="font-size:14px"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><span>XI IPA 3</span><b style="color:#8A4A0B">61 Â· perlu perhatian</b></div><div style="height:8px;border-radius:8px;background:#EEF1F7"><div style="width:61%;height:100%;border-radius:8px;background:#FF9F43"></div></div></div>
+    </section>
+  </div>
+
+  <div style="position:absolute;left:16px;right:16px;bottom:96px">
+    <button style="width:100%;height:52px;border:0;border-radius:16px;background:#356AE6;color:#fff;font-weight:600;font-size:16px;display:flex;gap:10px;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 20px rgba(53,106,230,.3)"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg>Mulai Classroom Battle</button>
+  </div>
+
+  <nav aria-label="Navigasi bawah" style="position:absolute;left:0;right:0;bottom:0;height:84px;box-sizing:border-box;padding:8px 8px 20px;background:#fff;border-top:1px solid #E1E6F0;display:flex;justify-content:space-around;align-items:flex-start">
+    <a href="#dashboard" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#2753C4;font-weight:600;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>Dashboard</a>
+    <a href="#kelas" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="4"></circle><path d="M2 21c0-4 3-6 7-6s7 2 7 6"></path></svg>Kelas</a>
+    <a href="#tugas" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 12h6M9 16h4"></path></svg>Tugas</a>
+    <a href="#analitik" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>Analitik</a>
+    <a href="#lainnya" aria-label="Lainnya, termasuk Bank Soal dan Pengaturan" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></svg>Lainnya</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+
+
+</body></html>

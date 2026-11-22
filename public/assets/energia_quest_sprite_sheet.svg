@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="960" viewBox="0 0 960 960" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <g id="legA">
+      <rect x="-12" y="0" width="11" height="40" rx="5" fill="#1D2B50"/>
+      <rect x="-14" y="34" width="15" height="7" rx="3" fill="#101A35"/>
+    </g>
+    <g id="legB">
+      <rect x="1" y="0" width="11" height="40" rx="5" fill="#101A35"/>
+      <rect x="0" y="34" width="15" height="7" rx="3" fill="#1D2B50"/>
+    </g>
+    <g id="armF">
+      <rect x="-4" y="0" width="8" height="30" rx="4" fill="#FF9F43"/>
+      <circle cx="0" cy="34" r="4.5" fill="#F2C7A0"/>
+    </g>
+    <g id="armB">
+      <rect x="-4" y="0" width="8" height="30" rx="4" fill="#E07A1F"/>
+      <circle cx="0" cy="34" r="4.5" fill="#D9A07E"/>
+    </g>
+    <g id="torso">
+      <rect x="-26" y="-80" width="12" height="36" rx="5" fill="#356AE6"/>
+      <rect x="-16" y="-84" width="32" height="46" rx="10" fill="#FF9F43"/>
+      <rect x="-16" y="-84" width="32" height="8" rx="4" fill="#E07A1F"/>
+      <circle cx="0" cy="-106" r="16" fill="#F2C7A0"/>
+      <path d="M-16 -108 Q-16 -124 0 -124 Q16 -124 16 -108 Q9 -116 0 -116 Q-9 -116 -16 -108Z" fill="#1D2B50"/>
+      <circle cx="6" cy="-106" r="5.5" fill="#101A35" stroke="#39C6E8" stroke-width="2.5"/>
+    </g>
+  </defs>
+
+  <!-- Row 0: idle (4 frames), cells at y=0 -->
+  <g transform="translate(80 136) scale(0.8)"><use href="#legB" transform="translate(0 -40) rotate(0)"/><use href="#armB" transform="translate(-12 -74) rotate(-3)"/><use href="#torso"/><use href="#legA" transform="translate(0 -40) rotate(0)"/><use href="#armF" transform="translate(12 -74) rotate(3)"/></g>
+  <g transform="translate(240 136) scale(0.8)"><use href="#legB" transform="translate(0 -42) rotate(0)"/><use href="#armB" transform="translate(-12 -76) rotate(-5)"/><use href="#torso" transform="translate(0 -2)"/><use href="#legA" transform="translate(0 -42) rotate(0)"/><use href="#armF" transform="translate(12 -76) rotate(5)"/></g>
+  <g transform="translate(400 136) scale(0.8)"><use href="#legB" transform="translate(0 -41) rotate(0)"/><use href="#armB" transform="translate(-12 -75) rotate(-3)"/><use href="#torso" transform="translate(0 -1)"/><use href="#legA" transform="translate(0 -41) rotate(0)"/><use href="#armF" transform="translate(12 -75) rotate(3)"/></g>
+  <g transform="translate(560 136) scale(0.8)"><use href="#legB" transform="translate(0 -40) rotate(0)"/><use href="#armB" transform="translate(-12 -74) rotate(0)"/><use href="#torso"/><use href="#legA" transform="translate(0 -40) rotate(0)"/><use href="#armF" transform="translate(12 -74) rotate(0)"/></g>
+
+  <!-- Row 1: run (6 frames), cells at y=160 -->
+  <g transform="translate(80 296) scale(0.8)"><use href="#legB" transform="translate(0 -42) rotate(30)"/><use href="#armB" transform="translate(-12 -76) rotate(-30)"/><use href="#torso" transform="translate(0 -2)"/><use href="#legA" transform="translate(0 -42) rotate(-30)"/><use href="#armF" transform="translate(12 -76) rotate(30)"/></g>
+  <g transform="translate(240 296) scale(0.8)"><use href="#legB" transform="translate(0 -45) rotate(15)"/><use href="#armB" transform="translate(-12 -79) rotate(-15)"/><use href="#torso" transform="translate(0 -5)"/><use href="#legA" transform="translate(0 -45) rotate(-15)"/><use href="#armF" transform="translate(12 -79) rotate(15)"/></g>
+  <g transform="translate(400 296) scale(0.8)"><use href="#legB" transform="translate(0 -42) rotate(-15)"/><use href="#armB" transform="translate(-12 -76) rotate(15)"/><use href="#torso" transform="translate(0 -2)"/><use href="#legA" transform="translate(0 -42) rotate(15)"/><use href="#armF" transform="translate(12 -76) rotate(-15)"/></g>
+  <g transform="translate(560 296) scale(0.8)"><use href="#legB" transform="translate(0 -42) rotate(-30)"/><use href="#armB" transform="translate(-12 -76) rotate(30)"/><use href="#torso" transform="translate(0 -2)"/><use href="#legA" transform="translate(0 -42) rotate(30)"/><use href="#armF" transform="translate(12 -76) rotate(-30)"/></g>
+  <g transform="translate(720 296) scale(0.8)"><use href="#legB" transform="translate(0 -45) rotate(-15)"/><use href="#armB" transform="translate(-12 -79) rotate(15)"/><use href="#torso" transform="translate(0 -5)"/><use href="#legA" transform="translate(0 -45) rotate(15)"/><use href="#armF" transform="translate(12 -79) rotate(-15)"/></g>
+  <g transform="translate(880 296) scale(0.8)"><use href="#legB" transform="translate(0 -42) rotate(15)"/><use href="#armB" transform="translate(-12 -76) rotate(-15)"/><use href="#torso" transform="translate(0 -2)"/><use href="#legA" transform="translate(0 -42) rotate(-15)"/><use href="#armF" transform="translate(12 -76) rotate(15)"/></g>
+
+  <!-- Row 2: jump (3 frames: crouch, takeoff, apex), cells at y=320 -->
+  <g transform="translate(80 456) scale(0.8)"><use href="#legB" transform="translate(0 -34) rotate(10)"/><use href="#armB" transform="translate(-12 -68) rotate(-30)"/><use href="#torso" transform="translate(0 6)"/><use href="#legA" transform="translate(0 -34) rotate(-10)"/><use href="#armF" transform="translate(12 -68) rotate(-30)"/></g>
+  <g transform="translate(240 456) scale(0.8)"><use href="#legB" transform="translate(0 -58) rotate(25)"/><use href="#armB" transform="translate(-12 -92) rotate(-120)"/><use href="#torso" transform="translate(0 -18)"/><use href="#legA" transform="translate(0 -58) rotate(-40)"/><use href="#armF" transform="translate(12 -92) rotate(-150)"/></g>
+  <g transform="translate(400 456) scale(0.8)"><use href="#legB" transform="translate(0 -66) rotate(20)"/><use href="#armB" transform="translate(-12 -100) rotate(-160)"/><use href="#torso" transform="translate(0 -26)"/><use href="#legA" transform="translate(0 -66) rotate(-20)"/><use href="#armF" transform="translate(12 -100) rotate(-165)"/></g>
+
+  <!-- Row 3: fall (2 frames), cells at y=480 -->
+  <g transform="translate(80 616) scale(0.8)"><use href="#legB" transform="translate(0 -62) rotate(-25)"/><use href="#armB" transform="translate(-12 -96) rotate(80)"/><use href="#torso" transform="translate(0 -22)"/><use href="#legA" transform="translate(0 -62) rotate(10)"/><use href="#armF" transform="translate(12 -96) rotate(-80)"/></g>
+  <g transform="translate(240 616) scale(0.8)"><use href="#legB" transform="translate(0 -66) rotate(-15)"/><use href="#armB" transform="translate(-12 -100) rotate(95)"/><use href="#torso" transform="translate(0 -26)"/><use href="#legA" transform="translate(0 -66) rotate(20)"/><use href="#armF" transform="translate(12 -100) rotate(-95)"/></g>
+
+  <!-- Row 4: celebrate (4 frames), cells at y=640 -->
+  <g transform="translate(80 776) scale(0.8)"><use href="#legB" transform="translate(0 -40) rotate(0)"/><use href="#armB" transform="translate(-12 -74) rotate(-140)"/><use href="#torso"/><use href="#legA" transform="translate(0 -40) rotate(0)"/><use href="#armF" transform="translate(12 -74) rotate(-160)"/></g>
+  <g transform="translate(240 776) scale(0.8)"><use href="#legB" transform="translate(0 -46) rotate(10)"/><use href="#armB" transform="translate(-12 -80) rotate(-120)"/><use href="#torso" transform="translate(0 -6)"/><use href="#legA" transform="translate(0 -46) rotate(-10)"/><use href="#armF" transform="translate(12 -80) rotate(-175)"/></g>
+  <g transform="translate(400 776) scale(0.8)"><use href="#legB" transform="translate(0 -40) rotate(0)"/><use href="#armB" transform="translate(-12 -74) rotate(-170)"/><use href="#torso"/><use href="#legA" transform="translate(0 -40) rotate(0)"/><use href="#armF" transform="translate(12 -74) rotate(-150)"/></g>
+  <g transform="translate(560 776) scale(0.8)"><use href="#legB" transform="translate(0 -46) rotate(10)"/><use href="#armB" transform="translate(-12 -80) rotate(-150)"/><use href="#torso" transform="translate(0 -6)"/><use href="#legA" transform="translate(0 -46) rotate(-10)"/><use href="#armF" transform="translate(12 -80) rotate(-170)"/></g>
+
+  <!-- Row 5: game objects, one per cell, each drawn in local 160x160 coordinates -->
+  <g transform="translate(0 800)">
+    <circle cx="80" cy="80" r="44" fill="#39C6E8" opacity="0.18"/>
+    <polygon points="80,34 54,80 80,126" fill="#9BE7F6"/>
+    <polygon points="80,34 106,80 80,126" fill="#2FA9CC"/>
+    <polygon points="70,52 76,46 76,60" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <g transform="translate(160 800)">
+    <rect x="56" y="30" width="6" height="100" rx="3" fill="#C9D2E6"/>
+    <polygon points="62,34 98,46 62,58" fill="#FF9F43"/>
+    <ellipse cx="59" cy="130" rx="20" ry="6" fill="#1D2B50"/>
+  </g>
+  <g transform="translate(320 800)">
+    <rect x="30" y="118" width="100" height="14" rx="4" fill="#1D2B50"/>
+    <path d="M52 118 L72 110 L52 102 L72 94 L52 86 L72 78 L60 74" fill="none" stroke="#FFD166" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="30" y="64" width="100" height="12" rx="6" fill="#FF9F43"/>
+  </g>
+  <g transform="translate(480 800)">
+    <rect x="10" y="96" width="140" height="24" rx="6" fill="#356AE6"/>
+    <rect x="10" y="96" width="140" height="6" rx="3" fill="#39C6E8"/>
+    <rect x="10" y="116" width="140" height="4" rx="2" fill="#1D2B50"/>
+  </g>
+  <g transform="translate(640 800)">
+    <rect x="52" y="92" width="56" height="40" rx="6" fill="#FF9F43" stroke="#101A35" stroke-width="3"/>
+    <path d="M62 130 L76 96 M80 130 L94 96" stroke="#101A35" stroke-width="5" stroke-linecap="round"/>
+    <path d="M30 72 L20 80 L30 88 M130 72 L140 80 L130 88" fill="none" stroke="#39C6E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(800 800)">
+    <circle cx="80" cy="80" r="40" fill="none" stroke="#39C6E8" stroke-width="8"/>
+    <circle cx="80" cy="80" r="30" fill="#1D2B50"/>
+    <circle cx="80" cy="80" r="22" fill="#356AE6" opacity="0.55"/>
+    <circle cx="80" cy="36" r="4" fill="#FFD166"/>
+    <circle cx="124" cy="80" r="3" fill="#FF9F43"/>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowZGM1ZmE4YS0zYjJkLTRlYTAtOWFjMS03OGY1ZWU3ZTlmODkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaP7J64RXw0HWnt1x6IvXrdUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5OGQzOTdlYy1jMGNlLTQ0NGEtYWIxYS0zZGYyZjE5MmVmYTdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoIFp4KvjF56DjkSGvO1AlggAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggF/X2fCMLedsrnMMOEURP3HA+kcxnQpjYQpmmKefAw+CkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaB4gdvNu6O/zTPOKHNkraSgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIAFd/Lo/SrXYqShqYgyReSmlpSaeDmpm8q3F+kCUtvP0ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSbeZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjBkYzVmYThhLTNiMmQtNGVhMC05YWMxLTc4ZjVlZTdlOWY4OS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmIwZDZjNWMyLWFkNzYtNDQ2ZC1hNGIzLTg5ZmM5MTk4ODA3Y3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAX9fZ8Iwt52yucww4RRE/ccD6RzGdCmNhCmaYp58DD4KJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggfjssyf0gkW3tkTgwDe6uOJcqcchlZSlFiYHcB5BlwFmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggU2Fs50z79cVqFX2pr+VaQeRo5r11s/zttt7RIJ6kU350Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAx0difQAJ7T38SRcxRROW1JnF01ECmTXSGcSq/PEDZJjS2c7xmXufGrY+UJwZI2igf8GcJrK/Eq8dE0lT9UOxI=</c2pa:manifest></metadata></svg>

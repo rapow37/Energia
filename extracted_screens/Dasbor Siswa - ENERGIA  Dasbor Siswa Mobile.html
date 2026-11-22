@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<title>ENERGIA â Dasbor Siswa (Mobile)</title>
+<script src="3a7228b2-fbe7-4ba5-9b46-52ab419b5fa1"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("dbca116e-8b00-4aba-b75b-6d128e471073") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3ad2e1d4-42c6-47d2-a5bd-f31a7859ce82") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("75055390-7f99-4f39-ac61-5d172d154272") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7fb9bd37-03f6-4ecf-99a3-3a78ec31bc9f") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fdc75d31-5325-4b9d-9781-7edb8b8d6ccd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("63ceb5ed-25bd-4921-8ba4-6b0b054190f8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("907925c7-b36b-44f4-b3b8-18c0bd565a31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("dbca116e-8b00-4aba-b75b-6d128e471073") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3ad2e1d4-42c6-47d2-a5bd-f31a7859ce82") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("75055390-7f99-4f39-ac61-5d172d154272") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7fb9bd37-03f6-4ecf-99a3-3a78ec31bc9f") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fdc75d31-5325-4b9d-9781-7edb8b8d6ccd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("63ceb5ed-25bd-4921-8ba4-6b0b054190f8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("907925c7-b36b-44f4-b3b8-18c0bd565a31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("dbca116e-8b00-4aba-b75b-6d128e471073") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("3ad2e1d4-42c6-47d2-a5bd-f31a7859ce82") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("75055390-7f99-4f39-ac61-5d172d154272") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7fb9bd37-03f6-4ecf-99a3-3a78ec31bc9f") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fdc75d31-5325-4b9d-9781-7edb8b8d6ccd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("63ceb5ed-25bd-4921-8ba4-6b0b054190f8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("907925c7-b36b-44f4-b3b8-18c0bd565a31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2zRNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv27RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2_RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8f3e3c9d-f809-40c6-a026-eb32beb89825") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2zRNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv27RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2_RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("8f3e3c9d-f809-40c6-a026-eb32beb89825") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2zRNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv27RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=LDIWaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0mvQTckyDQbQcCl6BIHv2_RNuzX&skey=ca4b9e62a7d41df5&v=v12) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("8f3e3c9d-f809-40c6-a026-eb32beb89825") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+button{font:inherit}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#F5F7FB;color:#101A35;font-family:Inter,sans-serif;overflow:hidden">
+
+  <header style="position:absolute;top:0;left:0;right:0;height:60px;box-sizing:border-box;background:#101A35;color:#fff;padding:0 16px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;gap:10px;align-items:center">
+      <div style="width:32px;height:32px;border-radius:9px;background:#356AE6;display:grid;place-items:center"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg></div>
+      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:17px">ENERGIA</span>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <span style="display:flex;gap:4px;align-items:center;padding:6px 10px;border-radius:10px;background:#FFF1E3;color:#8A4A0B;font-weight:700;font-size:13px"><svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="#FF9F43" aria-hidden="true"><path d="M12 3c1 3 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 0-8z"></path></svg>7</span>
+      <button aria-label="Notifikasi, 2 baru" style="position:relative;width:38px;height:38px;border:0;border-radius:12px;background:#1D2B50;color:#fff;display:grid;place-items:center"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"></path></svg></button>
+      <div aria-label="Profil Raka Pratama" style="width:36px;height:36px;border-radius:18px;padding:2px;background:linear-gradient(135deg,#39C6E8,#356AE6);box-sizing:border-box"><div style="width:100%;height:100%;border-radius:16px;background:#1D2B50;display:grid;place-items:center;font-weight:800;font-size:12px">RP</div></div>
+    </div>
+  </header>
+
+  <div style="position:absolute;top:60px;left:0;right:0;bottom:84px;overflow-y:auto;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px">
+
+    <section>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin:0">Halo, Raka!</h1>
+      <p style="margin:4px 0 0;font-size:14px;line-height:20px;color:#4A5675">Kamu hanya 2 bagian lagi dari Hukum Newton.</p>
+    </section>
+
+    <section aria-label="Ringkasan XP" style="background:#fff;border-radius:18px;padding:14px 16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span style="padding:4px 9px;border-radius:9px;background:#101A35;color:#fff;font-weight:700;font-size:13px">Lv 7</span>
+        <span style="font-size:14px"><b>1.240</b> <span style="color:#4A5675">/ 1.500 XP</span></span>
+      </div>
+      <div style="height:10px;border-radius:10px;background:#EEF1F7;overflow:hidden"><div style="width:83%;height:100%;border-radius:10px;background:linear-gradient(90deg,#356AE6,#39C6E8)"></div></div>
+      <div style="font-size:13px;color:#4A5675">260 XP lagi untuk Level 8</div>
+    </section>
+
+    <section aria-labelledby="m-lanjut" style="border-radius:22px;padding:22px;background:linear-gradient(120deg,#1D2B50 0%,#356AE6 100%);color:#fff;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 28px rgba(29,43,80,.22)">
+      <span style="align-self:flex-start;padding:4px 10px;border-radius:9px;background:#39C6E8;color:#101A35;font-weight:700;font-size:12px">BELAJAR</span>
+      <h2 id="m-lanjut" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;line-height:30px;margin:0">Hukum Newton Kedua</h2>
+      <div style="font-size:14px;line-height:20px;color:#E6ECFA">Bab 4 Â· Percobaan kereta dorong</div>
+      <div style="height:8px;border-radius:8px;background:rgba(255,255,255,.25);overflow:hidden"><div style="width:67%;height:100%;background:#39C6E8"></div></div>
+      <div style="font-size:13px;color:#E6ECFA">4 dari 6 bagian selesai</div>
+      <button style="height:50px;border:0;border-radius:14px;background:#fff;color:#101A35;font-weight:700;font-size:16px;cursor:pointer;display:flex;gap:8px;align-items:center;justify-content:center"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="#101A35" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>Lanjutkan Belajar</button>
+    </section>
+
+    <section aria-labelledby="m-pilih" style="display:flex;flex-direction:column;gap:12px">
+      <h2 id="m-pilih" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;margin:0">Pilih aktivitasmu</h2>
+      <div id="lab" style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;gap:14px;align-items:center">
+        <span style="width:52px;height:52px;border-radius:16px;background:#EEF3FD;color:#2753C4;display:grid;place-items:center;flex-shrink:0"><svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"></path></svg></span>
+        <div style="flex:1;min-width:0"><span style="font-size:12px;font-weight:700;color:#2753C4">BELAJAR</span><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px">Energy Lab</div><div style="font-size:13px;color:#4A5675">3 eksperimen baru</div></div>
+        <button aria-label="Masuk Energy Lab" style="height:44px;padding:0 14px;border:0;border-radius:12px;background:#356AE6;color:#fff;font-weight:600;font-size:14px;cursor:pointer">Masuk</button>
+      </div>
+      <div id="quest" style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:14px;align-items:center">
+          <span style="width:52px;height:52px;border-radius:16px;background:#FFF1E3;color:#8A4A0B;display:grid;place-items:center;flex-shrink:0"><svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4M4 4h11l-2 4 2 4H4"></path></svg></span>
+          <div style="flex:1;min-width:0"><span style="font-size:12px;font-weight:700;color:#8A4A0B">BERMAIN</span><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px">Energy Quest</div><div style="font-size:13px;color:#4A5675">Misi 7 dari 12 Â· 3 misi tersedia</div></div>
+        </div>
+        <div style="height:8px;border-radius:8px;background:#EEF1F7"><div style="width:58%;height:100%;border-radius:8px;background:#FF9F43"></div></div>
+        <button style="height:46px;border:0;border-radius:12px;background:#FF9F43;color:#101A35;font-weight:700;font-size:15px;cursor:pointer">Lanjut Misi</button>
+      </div>
+    </section>
+
+    <section id="tugas" aria-labelledby="m-tugas" style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><h2 id="m-tugas" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;margin:0">Tugas aktif</h2><a href="#tugas" style="font-size:13px;font-weight:600;color:#2753C4;text-decoration:none">Semua</a></div>
+      <div style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span style="padding:4px 8px;border-radius:8px;background:#E7F9FD;color:#136A82;font-size:12px;font-weight:700">TUGAS</span><span style="padding:4px 8px;border-radius:8px;background:#FFF1E3;color:#8A4A0B;font-size:12px;font-weight:700">Besok, 23.59</span></div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px">Laporan Praktikum Bandul</div>
+        <div style="font-size:13px;color:#4A5675">Bagian 2 dari 4 Â· Analisis data</div>
+        <div style="height:8px;border-radius:8px;background:#E1E6F0"><div style="width:50%;height:100%;border-radius:8px;background:#39C6E8"></div></div>
+        <button style="height:44px;border:0;border-radius:12px;background:#101A35;color:#fff;font-weight:600;font-size:15px;cursor:pointer">Kerjakan</button>
+      </div>
+      <div style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span style="padding:4px 8px;border-radius:8px;background:#E7F9FD;color:#136A82;font-size:12px;font-weight:700">TUGAS</span><span style="padding:4px 8px;border-radius:8px;background:#EEF3FD;color:#2753C4;font-size:12px;font-weight:700">25 Nov</span></div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px">Latihan Hukum Newton</div>
+        <div style="font-size:13px;color:#4A5675">3 dari 5 soal selesai</div>
+        <div style="height:8px;border-radius:8px;background:#E1E6F0"><div style="width:60%;height:100%;border-radius:8px;background:#39C6E8"></div></div>
+        <button style="height:44px;border:0;border-radius:12px;background:#101A35;color:#fff;font-weight:600;font-size:15px;cursor:pointer">Lanjutkan</button>
+      </div>
+    </section>
+
+    <section id="pencapaian" aria-labelledby="m-badge" style="display:flex;flex-direction:column;gap:12px">
+      <h2 id="m-badge" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;margin:0">Pencapaian terbaru</h2>
+      <div style="display:flex;gap:10px;overflow-x:auto">
+        <div style="flex:0 0 112px;background:#fff;border-radius:16px;padding:14px 10px;text-align:center;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:8px;align-items:center"><span style="width:44px;height:44px;border-radius:14px;background:#EEF3FD;color:#2753C4;display:grid;place-items:center"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"></path></svg></span><span style="font-size:13px;font-weight:600">Ahli Lab</span></div>
+        <div style="flex:0 0 112px;background:#fff;border-radius:16px;padding:14px 10px;text-align:center;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:8px;align-items:center"><span style="width:44px;height:44px;border-radius:14px;background:#FFF1E3;color:#8A4A0B;display:grid;place-items:center"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4M4 4h11l-2 4 2 4H4"></path></svg></span><span style="font-size:13px;font-weight:600">Penjelajah</span></div>
+        <div style="flex:0 0 112px;background:#fff;border-radius:16px;padding:14px 10px;text-align:center;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06);display:flex;flex-direction:column;gap:8px;align-items:center"><span style="width:44px;height:44px;border-radius:14px;background:#E7F9FD;color:#136A82;display:grid;place-items:center"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg></span><span style="font-size:13px;font-weight:600">Tepat Waktu</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="m-aktivitas" style="background:#fff;border-radius:18px;padding:16px;box-shadow:0 1px 2px rgba(16,26,53,.05),0 4px 14px rgba(16,26,53,.06)">
+      <h2 id="m-aktivitas" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;margin:0 0 4px">Aktivitas terbaru</h2>
+      <div style="display:flex;gap:12px;padding:12px 0;border-top:1px solid #EEF1F7;align-items:flex-start"><span style="width:10px;height:10px;border-radius:5px;background:#356AE6;margin-top:6px;flex-shrink:0"></span><div style="font-size:14px;line-height:20px">Menyelesaikan materi <b>Hukum Newton I</b><div style="font-size:13px;color:#4A5675">Belajar Â· 2 jam lalu</div></div></div>
+      <div style="display:flex;gap:12px;padding:12px 0;border-top:1px solid #EEF1F7;align-items:flex-start"><span style="width:10px;height:10px;border-radius:5px;background:#FF9F43;margin-top:6px;flex-shrink:0"></span><div style="font-size:14px;line-height:20px">Misi <b>Gelombang Pertama</b> selesai, +80 XP<div style="font-size:13px;color:#4A5675">Bermain Â· kemarin</div></div></div>
+      <div style="display:flex;gap:12px;padding:12px 0;border-top:1px solid #EEF1F7;align-items:flex-start"><span style="width:10px;height:10px;border-radius:5px;background:#39C6E8;margin-top:6px;flex-shrink:0"></span><div style="font-size:14px;line-height:20px">Mengumpulkan <b>Energi Kinetik</b> tepat waktu<div style="font-size:13px;color:#4A5675">Tugas Â· 18 Nov</div></div></div>
+    </section>
+  </div>
+
+  <nav aria-label="Navigasi siswa" style="position:absolute;left:0;right:0;bottom:0;height:84px;box-sizing:border-box;padding:8px 6px 20px;background:#fff;border-top:1px solid #E1E6F0;display:flex;justify-content:space-around;align-items:flex-start">
+    <a href="#beranda" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#2753C4;font-weight:600;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>Beranda</a>
+    <a href="#lab" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"></path></svg>Lab</a>
+    <a href="#quest" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4M4 4h11l-2 4 2 4H4"></path></svg>Quest</a>
+    <a href="#tugas" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 12h6M9 16h4"></path></svg>Tugas</a>
+    <a href="#profil" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#4A5675;font-weight:500;font-size:12px;text-decoration:none;min-width:60px;min-height:44px"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>Profil</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+
+
+</body></html>

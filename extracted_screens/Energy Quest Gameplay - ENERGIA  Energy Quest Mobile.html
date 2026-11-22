@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENERGIA â Energy Quest (Mobile)</title>
+<script src="338a21b4-f8ff-46bd-b2e5-ed86a7c749dd"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("287c3906-6962-4d92-be65-b2425485a368") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("cf4749cd-6bbb-4206-a9bf-19133889fc5f") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f9a6f2af-ec6b-44e8-b4b8-5ab9546b1afa") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4b9fec75-704f-4b86-b731-31b7dba9b8a2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("88356c42-e3bd-4013-896a-6a4d3a0af9ad") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("98ca6e4a-191b-4ae6-9ba8-22e00c9e762a") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f54f53aa-840e-4207-8039-bc7d6250c082") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("287c3906-6962-4d92-be65-b2425485a368") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("cf4749cd-6bbb-4206-a9bf-19133889fc5f") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("f9a6f2af-ec6b-44e8-b4b8-5ab9546b1afa") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("4b9fec75-704f-4b86-b731-31b7dba9b8a2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("88356c42-e3bd-4013-896a-6a4d3a0af9ad") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("98ca6e4a-191b-4ae6-9ba8-22e00c9e762a") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("f54f53aa-840e-4207-8039-bc7d6250c082") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("287c3906-6962-4d92-be65-b2425485a368") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("cf4749cd-6bbb-4206-a9bf-19133889fc5f") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("f9a6f2af-ec6b-44e8-b4b8-5ab9546b1afa") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("4b9fec75-704f-4b86-b731-31b7dba9b8a2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("88356c42-e3bd-4013-896a-6a4d3a0af9ad") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("98ca6e4a-191b-4ae6-9ba8-22e00c9e762a") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("f54f53aa-840e-4207-8039-bc7d6250c082") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8190c181-5af4-4c73-a2b2-538c2c50acb4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("8190c181-5af4-4c73-a2b2-538c2c50acb4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("8190c181-5af4-4c73-a2b2-538c2c50acb4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+button{font:inherit;-webkit-tap-highlight-color:transparent}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:844px;overflow:hidden;background:#0B1430;font-family:Inter,sans-serif;color:#fff">
+
+  <svg sc-camel-view-box="0 0 390 844" width="390" height="844" style="position:absolute;left:0;top:0" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1430"></stop><stop offset=".6" stop-color="#1D2B50"></stop><stop offset="1" stop-color="#2D4F8E"></stop></linearGradient>
+      <radialGradient id="glow" cx=".7" cy=".45" r=".5"><stop offset="0" stop-color="#39C6E8" stop-opacity=".28"></stop><stop offset="1" stop-color="#39C6E8" stop-opacity="0"></stop></radialGradient>
+      <radialGradient id="orb" cx=".38" cy=".36" r=".65"><stop offset="0" stop-color="#FFF6D0"></stop><stop offset=".55" stop-color="#FFD166"></stop><stop offset="1" stop-color="#E9A21B"></stop></radialGradient>
+      <pattern id="stripe" width="12" height="12" sc-camel-pattern-units="userSpaceOnUse" sc-camel-pattern-transform="rotate(45)"><rect width="6" height="12" fill="#FF9F43"></rect><rect x="6" width="6" height="12" fill="#101A35"></rect></pattern>
+      <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E3262"></stop><stop offset="1" stop-color="#0E1834"></stop></linearGradient>
+    </defs>
+    <rect width="390" height="844" fill="url(#sky)"></rect>
+    <rect width="390" height="844" fill="url(#glow)"></rect>
+    <g fill="#E6ECFA" opacity=".45"><circle cx="40" cy="250" r="1.3"></circle><circle cx="130" cy="280" r="1"></circle><circle cx="340" cy="260" r="1.4"></circle><circle cx="300" cy="420" r="1"></circle></g>
+
+    <path d="M0 430 L70 360 L140 420 L210 350 L280 410 L390 340 L390 844 L0 844Z" fill="#22386A"></path>
+    <path d="M0 480 L90 430 L180 470 L260 440 L390 490 L390 844 L0 844Z" fill="#1A2C58"></path>
+
+    <path d="M236 540 A52 52 0 0 1 340 540 Z" fill="#2D4F8E"></path>
+    <rect x="232" y="537" width="112" height="6" rx="3" fill="#3B63AE"></rect>
+    <rect x="300" y="300" width="30" height="240" rx="5" fill="#24396B"></rect>
+    <ellipse cx="315" cy="350" rx="40" ry="7" fill="none" stroke="#39C6E8" stroke-width="2.5" opacity=".8"></ellipse>
+    <line x1="315" y1="300" x2="315" y2="262" stroke="#C9D2E6" stroke-width="2.5"></line>
+    <circle cx="315" cy="260" r="4" fill="#FF9F43"></circle>
+
+    <rect x="0" y="600" width="390" height="244" fill="url(#ground)"></rect>
+    <line x1="0" y1="600" x2="390" y2="600" stroke="#39C6E8" stroke-width="2" opacity=".6"></line>
+
+    <path d="M130 560 C175 560 195 330 235 330 C270 330 292 560 340 560" fill="none" stroke="#101A35" stroke-width="14" stroke-linecap="round"></path>
+    <path d="M130 560 C175 560 195 330 235 330 C270 330 292 560 340 560" fill="none" stroke="#E6ECFA" stroke-width="6" stroke-linecap="round"></path>
+    <path d="M130 560 C175 560 195 330 235 330 C270 330 292 560 340 560" fill="none" stroke="#356AE6" stroke-width="2" stroke-dasharray="8 7" stroke-linecap="round"></path>
+    <g stroke="#24396B" stroke-width="5"><line x1="235" y1="330" x2="235" y2="600"></line><line x1="200" y1="520" x2="200" y2="600"></line></g>
+
+    <rect x="20" y="560" width="110" height="18" rx="4" fill="#356AE6"></rect>
+    <rect x="20" y="560" width="110" height="4" rx="2" fill="#39C6E8"></rect>
+
+    <rect x="150" y="486" width="24" height="34" rx="4" fill="url(#stripe)" stroke="#101A35" stroke-width="2"></rect>
+    <polygon points="296,575 306,553 316,575 326,553 336,575" fill="#FF9F43" stroke="#101A35" stroke-width="2"></polygon>
+
+    <g>
+      <circle cx="120" cy="432" r="22" fill="none" stroke="#39C6E8" stroke-width="2" opacity=".3"></circle>
+      <circle cx="120" cy="432" r="13" fill="#24396B" stroke="#FFD166" stroke-width="2"></circle>
+      <path d="M113 432 L118 437 L127 427" fill="none" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"></path>
+      <circle cx="235" cy="292" r="22" fill="none" stroke="#39C6E8" stroke-width="2" opacity=".3"></circle>
+      <circle cx="235" cy="292" r="13" fill="#24396B" stroke="#FFD166" stroke-width="2"></circle>
+      <path d="M228 292 L233 297 L242 287" fill="none" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"></path>
+      <circle cx="345" cy="522" r="22" fill="none" stroke="#39C6E8" stroke-width="2" opacity=".3"></circle>
+      <circle cx="345" cy="522" r="13" fill="#24396B" stroke="#FFD166" stroke-width="2"></circle>
+      <path d="M338 522 L343 527 L352 517" fill="none" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"></path>
+      <circle cx="205" cy="428" r="26" fill="none" stroke="#39C6E8" stroke-width="2" opacity=".7"></circle>
+      <circle cx="205" cy="428" r="15" fill="url(#orb)"></circle>
+      <circle cx="200" cy="423" r="4" fill="#fff" opacity=".8"></circle>
+      <circle cx="265" cy="500" r="26" fill="none" stroke="#39C6E8" stroke-width="2" opacity=".7"></circle>
+      <circle cx="265" cy="500" r="15" fill="url(#orb)"></circle>
+      <circle cx="260" cy="495" r="4" fill="#fff" opacity=".8"></circle>
+    </g>
+
+    <g transform="translate(70,560) scale(.82) translate(-152,-500)">
+      <ellipse cx="152" cy="502" rx="34" ry="6" fill="#050B1A" opacity=".35"></ellipse>
+      <rect x="136" y="462" width="13" height="40" rx="6" fill="#1D2B50"></rect>
+      <rect x="153" y="462" width="13" height="40" rx="6" fill="#101A35"></rect>
+      <rect x="118" y="416" width="16" height="44" rx="6" fill="#356AE6"></rect>
+      <rect x="132" y="412" width="40" height="60" rx="13" fill="#FF9F43"></rect>
+      <rect x="132" y="412" width="40" height="10" rx="5" fill="#E07A1F"></rect>
+      <path d="M168 424 L196 410" stroke="#FF9F43" stroke-width="10" stroke-linecap="round"></path>
+      <circle cx="198" cy="408" r="6" fill="#F2C7A0"></circle>
+      <circle cx="152" cy="392" r="20" fill="#F2C7A0"></circle>
+      <path d="M131 390 Q130 368 152 368 Q174 368 173 390 Q166 379 152 380 Q139 380 131 390Z" fill="#1D2B50"></path>
+      <circle cx="161" cy="393" r="7" fill="#101A35" stroke="#39C6E8" stroke-width="3"></circle>
+      <path d="M146 404 Q152 408 158 404" fill="none" stroke="#7A3E1D" stroke-width="2" stroke-linecap="round"></path>
+    </g>
+  </svg>
+
+  <header style="position:absolute;left:12px;right:12px;top:12px;display:flex;gap:10px;align-items:center">
+    <button aria-label="Jeda" style="width:48px;height:48px;flex-shrink:0;border:1px solid #3A5296;border-radius:14px;background:rgba(16,26,53,.94);color:#fff;display:grid;place-items:center;cursor:pointer"><svg width="18" height="20" sc-camel-view-box="0 0 24 24" fill="#fff" aria-hidden="true"><rect x="5" y="4" width="5" height="16" rx="1.5"></rect><rect x="14" y="4" width="5" height="16" rx="1.5"></rect></svg></button>
+    <div style="flex:1;min-width:0;padding:8px 12px;border-radius:14px;background:rgba(16,26,53,.94);border:1px solid #24396B">
+      <div style="display:flex;gap:8px;align-items:center"><span style="padding:2px 7px;border-radius:6px;background:#FFD166;color:#101A35;font-weight:800;font-size:11px">LEVEL 3</span><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Puncak Potensial</span></div>
+      <div style="font-size:13px;color:#C9D2E6;margin-top:2px">Skor 2.480 Â· Percobaan 1/3</div>
+    </div>
+    <button aria-label="Petunjuk" style="width:48px;height:48px;flex-shrink:0;border:0;border-radius:14px;background:#FF9F43;color:#101A35;display:grid;place-items:center;cursor:pointer"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#101A35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"></path></svg></button>
+  </header>
+
+  <section aria-label="Tujuan dan energi" style="position:absolute;left:12px;right:12px;top:76px;box-sizing:border-box;padding:12px 14px;border-radius:16px;background:rgba(16,26,53,.94);border:1px solid #24396B;display:flex;flex-direction:column;gap:10px">
+    <div style="font-size:14px;line-height:20px;color:#E6ECFA">Tujuan: bawa kereta ke goal dengan Ep minimal 40 J di puncak kedua.</div>
+    <div style="display:flex;justify-content:space-between;font-size:13px;color:#C9D2E6"><span>Energi terkumpul</span><b style="color:#fff">3 / 5 Â· +120 XP</b></div>
+    <div style="height:8px;border-radius:8px;background:#24396B;overflow:hidden"><div style="width:60%;height:100%;background:#39C6E8"></div></div>
+    <div style="display:flex;gap:8px;align-items:center;font-size:13px;color:#C9D2E6">
+      <span style="width:52px"><b style="color:#7FA8FF">Ep</b> 62 J</span>
+      <div style="flex:1;display:flex;height:10px;border-radius:6px;overflow:hidden;background:#24396B"><div style="width:78%;background:#356AE6"></div><div style="width:22%;background:#39C6E8"></div></div>
+      <span style="width:52px;text-align:right"><b style="color:#39C6E8">Ek</b> 18 J</span>
+    </div>
+  </section>
+
+  <div role="group" aria-label="Kontrol gerak dan aksi" style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,rgba(11,20,48,0) 0%,#0B1430 40%)"></div>
+
+  <div style="position:absolute;left:16px;bottom:28px;display:flex;gap:12px">
+    <button aria-label="Gerak kiri" style="width:72px;height:72px;border-radius:20px;border:1px solid #3A5296;background:#1D2B50;color:#fff;display:grid;place-items:center;cursor:pointer"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <button aria-label="Gerak kanan" style="width:72px;height:72px;border-radius:20px;border:1px solid #3A5296;background:#1D2B50;color:#fff;display:grid;place-items:center;cursor:pointer"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+  </div>
+
+  <div style="position:absolute;right:16px;bottom:28px;display:flex;gap:12px;align-items:flex-end">
+    <button aria-label="Interaksi" style="height:64px;padding:0 14px;border-radius:20px;border:1px solid #39C6E8;background:#101A35;color:#39C6E8;font-weight:700;font-size:14px;cursor:pointer">Interaksi</button>
+    <button aria-label="Lompat" style="width:96px;height:96px;border-radius:48px;border:0;background:#356AE6;color:#fff;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 8px 22px rgba(53,106,230,.45);display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>Lompat</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+
+
+</body></html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENERGIA â Classroom Battle Â· Pemain (Mobile)</title>
+<script src="d4b707bb-b166-4fe8-92ab-5a1af1d2fbfe"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("95a19695-b909-436f-a657-1081bd3c0579") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bcef8167-a41a-477e-bb80-96cd24494879") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("a44bfb93-b854-46e3-9e3f-0e9edfa4143d") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("69573577-4361-4a81-a573-100fb39e4106") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("8e0db32b-0cf7-4e81-bfa6-ef20acc14805") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f98f73c4-684b-4ec9-b99e-c45462bf880d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("039e8ba3-fd0a-4f46-a63e-878aee17730f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("95a19695-b909-436f-a657-1081bd3c0579") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("bcef8167-a41a-477e-bb80-96cd24494879") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("a44bfb93-b854-46e3-9e3f-0e9edfa4143d") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("69573577-4361-4a81-a573-100fb39e4106") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("8e0db32b-0cf7-4e81-bfa6-ef20acc14805") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("f98f73c4-684b-4ec9-b99e-c45462bf880d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("039e8ba3-fd0a-4f46-a63e-878aee17730f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("95a19695-b909-436f-a657-1081bd3c0579") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("bcef8167-a41a-477e-bb80-96cd24494879") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("a44bfb93-b854-46e3-9e3f-0e9edfa4143d") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("69573577-4361-4a81-a573-100fb39e4106") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8e0db32b-0cf7-4e81-bfa6-ef20acc14805") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("f98f73c4-684b-4ec9-b99e-c45462bf880d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("039e8ba3-fd0a-4f46-a63e-878aee17730f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("afc4ed87-76b5-4272-a033-33023e8b7f0f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("afc4ed87-76b5-4272-a033-33023e8b7f0f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("afc4ed87-76b5-4272-a033-33023e8b7f0f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+button{font:inherit;-webkit-tap-highlight-color:transparent}
+</style>
+</helmet>
+<div style="position:relative;width:390px;height:844px;overflow:hidden;background:linear-gradient(180deg,#101A35 0%,#1D2B50 100%);color:#fff;font-family:Inter,sans-serif">
+
+  <header style="position:absolute;left:0;right:0;top:0;height:64px;box-sizing:border-box;padding:10px 16px 0;display:flex;justify-content:space-between;align-items:center;gap:12px">
+    <div style="min-width:0">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;line-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Kuis Gerak Lurus &amp; Gaya</div>
+      <div style="font-size:14px;line-height:20px;color:#C9D2E6">XI IPA 2 Â· Raka P.</div>
+    </div>
+    <div role="timer" aria-label="Sisa waktu 14 detik" style="display:flex;gap:6px;align-items:center;padding:8px 12px;border-radius:12px;background:#FFD166;color:#101A35;flex-shrink:0">
+      <svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#101A35" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2.5 2M9 2h6"></path></svg>
+      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;line-height:24px">00:14</span>
+    </div>
+  </header>
+
+  <section aria-label="Progres" style="position:absolute;left:16px;right:16px;top:78px;display:flex;flex-direction:column;gap:10px">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-weight:700;font-size:16px">Soal 4 dari 10</span>
+      <span style="font-weight:700;font-size:16px;color:#39C6E8">Skor 2.180</span>
+    </div>
+    <div role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="3" aria-label="Soal terjawab" style="display:flex;gap:4px">
+      <span style="flex:1;height:8px;border-radius:4px;background:#39C6E8"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#39C6E8"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#39C6E8"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#FF9F43"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+      <span style="flex:1;height:8px;border-radius:4px;background:#2D3E66"></span>
+    </div>
+    <div aria-hidden="true" style="height:10px;border-radius:10px;background:#2D3E66;overflow:hidden"><div style="width:47%;height:100%;background:#FFD166"></div></div>
+  </section>
+
+  <article aria-labelledby="pertanyaan" style="position:absolute;left:16px;right:16px;top:172px;box-sizing:border-box;background:#fff;color:#101A35;border-radius:24px;padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-size:14px;font-weight:700;letter-spacing:.06em;color:#4A5675">PERTANYAAN 4</div>
+    <h1 id="pertanyaan" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:22px;line-height:30px;margin:0">Sebuah kereta 500 kg bergerak dengan kecepatan 10 m/s. Berapa energi kinetiknya?</h1>
+  </article>
+
+  <fieldset style="position:absolute;left:16px;right:16px;top:382px;margin:0;padding:0;border:0;display:flex;flex-direction:column;gap:12px">
+    <legend style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Pilih satu jawaban</legend>
+
+    <button aria-pressed="false" style="min-height:72px;box-sizing:border-box;padding:12px 16px;border-radius:18px;border:2px solid #fff;background:#fff;color:#101A35;display:flex;gap:14px;align-items:center;text-align:left;cursor:pointer">
+      <span style="width:40px;height:40px;border-radius:12px;background:#EEF1F7;color:#101A35;display:grid;place-items:center;font-weight:800;font-size:18px;flex-shrink:0">A</span>
+      <span style="font-weight:700;font-size:20px">2.500 J</span>
+    </button>
+
+    <button aria-pressed="true" style="min-height:72px;box-sizing:border-box;padding:12px 16px;border-radius:18px;border:3px solid #FFD166;background:#356AE6;color:#fff;display:flex;gap:14px;align-items:center;text-align:left;cursor:pointer;box-shadow:0 8px 20px rgba(53,106,230,.35)">
+      <span style="width:40px;height:40px;border-radius:12px;background:#fff;color:#1D2B50;display:grid;place-items:center;font-weight:800;font-size:18px;flex-shrink:0">B</span>
+      <span style="font-weight:700;font-size:20px;flex:1">5.000 J</span>
+      <span style="width:30px;height:30px;border-radius:15px;background:#fff;display:grid;place-items:center;flex-shrink:0"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#356AE6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg></span>
+    </button>
+
+    <button aria-pressed="false" style="min-height:72px;box-sizing:border-box;padding:12px 16px;border-radius:18px;border:2px solid #fff;background:#fff;color:#101A35;display:flex;gap:14px;align-items:center;text-align:left;cursor:pointer">
+      <span style="width:40px;height:40px;border-radius:12px;background:#EEF1F7;color:#101A35;display:grid;place-items:center;font-weight:800;font-size:18px;flex-shrink:0">C</span>
+      <span style="font-weight:700;font-size:20px">25.000 J</span>
+    </button>
+
+    <button aria-pressed="false" style="min-height:72px;box-sizing:border-box;padding:12px 16px;border-radius:18px;border:2px solid #fff;background:#fff;color:#101A35;display:flex;gap:14px;align-items:center;text-align:left;cursor:pointer">
+      <span style="width:40px;height:40px;border-radius:12px;background:#EEF1F7;color:#101A35;display:grid;place-items:center;font-weight:800;font-size:18px;flex-shrink:0">D</span>
+      <span style="font-weight:700;font-size:20px">50.000 J</span>
+    </button>
+  </fieldset>
+
+  <div style="position:absolute;left:0;right:0;bottom:0;height:128px;box-sizing:border-box;padding:14px 16px 22px;background:#101A35;border-top:1px solid #24396B">
+    <button style="width:100%;height:60px;border:0;border-radius:18px;background:#FF9F43;color:#101A35;font-weight:800;font-size:19px;display:flex;gap:10px;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 20px rgba(255,159,67,.3)">Kirim Jawaban<svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#101A35" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+    <div style="margin-top:8px;text-align:center;font-size:14px;line-height:20px;color:#C9D2E6">Jawaban terkunci setelah dikirim</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+
+
+</body></html>

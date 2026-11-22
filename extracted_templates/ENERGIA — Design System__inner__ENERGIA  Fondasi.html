@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<title>ENERGIA â Fondasi</title>
+<script src="1bb6096c-e53f-479a-8e0b-634591b9e4ac"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b27df334-e34c-4236-ae7a-d4e2edc0ea8f") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("479e0931-ff21-45ce-9396-d3ae742b50a5") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("53be60a0-f1e8-4acd-b04b-cd64831fa492") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bdd1733e-20fa-440f-b100-77d600d20948") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7eb1b9e6-e07b-47a3-959c-d4d84ac90008") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4347dfa4-a9a5-4fe1-a628-1721c1310aca") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5dfa484e-ca20-4b36-994a-2f8312b5b85f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b27df334-e34c-4236-ae7a-d4e2edc0ea8f") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("479e0931-ff21-45ce-9396-d3ae742b50a5") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("53be60a0-f1e8-4acd-b04b-cd64831fa492") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("bdd1733e-20fa-440f-b100-77d600d20948") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7eb1b9e6-e07b-47a3-959c-d4d84ac90008") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("4347dfa4-a9a5-4fe1-a628-1721c1310aca") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("5dfa484e-ca20-4b36-994a-2f8312b5b85f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b27df334-e34c-4236-ae7a-d4e2edc0ea8f") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("479e0931-ff21-45ce-9396-d3ae742b50a5") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("53be60a0-f1e8-4acd-b04b-cd64831fa492") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("bdd1733e-20fa-440f-b100-77d600d20948") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7eb1b9e6-e07b-47a3-959c-d4d84ac90008") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("4347dfa4-a9a5-4fe1-a628-1721c1310aca") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("5dfa484e-ca20-4b36-994a-2f8312b5b85f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("3e153a76-33d2-4709-8e3d-06ec2299c748") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("3e153a76-33d2-4709-8e3d-06ec2299c748") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("3e153a76-33d2-4709-8e3d-06ec2299c748") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width:1200px;height:900px;box-sizing:border-box;padding:56px 64px;background:#F5F7FB;color:#101A35;font-family:Inter,sans-serif;display:flex;flex-direction:column;gap:36px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end">
+    <div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em">ENERGIA</div>
+      <div style="font-size:18px;color:#4A5675;margin-top:4px">Explore. Experiment. Play. Understand.</div>
+    </div>
+    <div style="font-size:14px;color:#4A5675">Fondasi visual Â· v1.0</div>
+  </div>
+
+  <div>
+    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin-bottom:14px">Palet warna</div>
+    <div style="display:grid;grid-template-columns:repeat(9,1fr);gap:12px">
+      <div><div style="height:88px;border-radius:16px;background:#101A35;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Deep navy</div><div style="font-size:13px;color:#4A5675">#101A35</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#1D2B50;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Navy</div><div style="font-size:13px;color:#4A5675">#1D2B50</div></div>
+      <div><div style="height:88px;border-radius:16px;background:{{accent}};border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Blue Â· primer</div><div style="font-size:13px;color:#4A5675">{{accent}}</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#39C6E8;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Cyan Â· aksen</div><div style="font-size:13px;color:#4A5675">#39C6E8</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#FF9F43;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Orange Â· aksen</div><div style="font-size:13px;color:#4A5675">#FF9F43</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#FFD166;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Yellow Â· XP</div><div style="font-size:13px;color:#4A5675">#FFD166</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#28A879;border:1px solid #E1E6F0"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Green Â· sukses</div><div style="font-size:13px;color:#4A5675">#28A879</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#F5F7FB;border:1px solid #D5DCE8"></div><div style="font-weight:600;font-size:14px;margin-top:8px">Surface</div><div style="font-size:13px;color:#4A5675">#F5F7FB</div></div>
+      <div><div style="height:88px;border-radius:16px;background:#FFFFFF;border:1px solid #D5DCE8"></div><div style="font-weight:600;font-size:14px;margin-top:8px">White Â· kartu</div><div style="font-size:13px;color:#4A5675">#FFFFFF</div></div>
+    </div>
+    <div style="font-size:13px;color:#4A5675;margin-top:12px">Oranye dan cyan dipakai sebagai aksen kecil (CTA, progres, ikon). Hindari sebagai latar besar. Teks hijau dan biru di atas putih memakai varian gelap #1E7D5A dan #356AE6 agar kontras â¥ 4.5:1.</div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.25fr 1fr;gap:40px">
+    <div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin-bottom:14px">Tipografi</div>
+      <div style="background:#fff;border-radius:20px;padding:24px;box-shadow:0 1px 2px rgba(16,26,53,.06),0 8px 24px rgba(16,26,53,.08);display:flex;flex-direction:column;gap:18px">
+        <div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:40px;line-height:48px">Gaya Hidup Energi</div><div style="font-size:13px;color:#4A5675">Display Â· Plus Jakarta Sans 800 Â· 40/48</div></div>
+        <div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:28px;line-height:36px">Hukum Newton Kedua</div><div style="font-size:13px;color:#4A5675">H2 Â· Plus Jakarta Sans 700 Â· 28/36</div></div>
+        <div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;line-height:28px">Misi Hari Ini</div><div style="font-size:13px;color:#4A5675">H3 Â· Plus Jakarta Sans 700 Â· 20/28</div></div>
+        <div><div style="font-size:16px;line-height:24px">Gaya adalah dorongan atau tarikan yang mengubah gerak benda.</div><div style="font-size:13px;color:#4A5675">Body Â· Inter 400 Â· 16/24</div></div>
+        <div><div style="font-size:14px;line-height:20px;color:#4A5675">Lengkapi tiga percobaan untuk membuka lencana.</div><div style="font-size:13px;color:#4A5675">Small Â· Inter 400 Â· 14/20 (minimum untuk teks sekunder)</div></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin-bottom:14px">Spasi</div>
+        <div style="display:flex;align-items:flex-end;gap:14px">
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:4px;height:4px;background:#356AE6;margin-bottom:6px">&nbsp;</div>4</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:8px;height:8px;background:#356AE6;margin-bottom:6px"></div>8</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:12px;height:12px;background:#356AE6;margin-bottom:6px"></div>12</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:16px;height:16px;background:#356AE6;margin-bottom:6px"></div>16</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:24px;height:24px;background:#356AE6;margin-bottom:6px"></div>24</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:32px;height:32px;background:#356AE6;margin-bottom:6px"></div>32</div>
+          <div style="text-align:center;font-size:13px;color:#4A5675"><div style="width:48px;height:48px;background:#356AE6;margin-bottom:6px"></div>48</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin-bottom:14px">Radius &amp; elevasi</div>
+        <div style="display:flex;gap:16px">
+          <div style="flex:1;background:#fff;border-radius:12px;padding:16px;font-size:13px;color:#4A5675;box-shadow:0 1px 2px rgba(16,26,53,.06)">Chip Â· 12<br>Tombol Â· 12</div>
+          <div style="flex:1;background:#fff;border-radius:16px;padding:16px;font-size:13px;color:#4A5675;box-shadow:0 1px 2px rgba(16,26,53,.06),0 8px 24px rgba(16,26,53,.08)">Kartu Â· 20<br>Elevasi 2</div>
+          <div style="flex:1;background:#fff;border-radius:24px;padding:16px;font-size:13px;color:#4A5675;box-shadow:0 1px 2px rgba(16,26,53,.06),0 8px 24px rgba(16,26,53,.08)">Hero Â· 24<br>Elevasi 2</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin-bottom:14px">Gradien (hemat)</div>
+        <div style="height:72px;border-radius:20px;background:linear-gradient(120deg,#1D2B50 0%,#356AE6 100%);color:#fff;display:flex;align-items:center;padding:0 20px;font-weight:600">Hanya untuk kartu hero dan header bab</div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#356AE6&quot;},&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#356AE6' };
+}
+}
+</script>
+
+
+</body></html>

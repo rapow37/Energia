@@ -1,0 +1,26 @@
+{
+  "image": "energia_quest_sprite_sheet.png",
+  "sourceSvg": "energia_quest_sprite_sheet.svg",
+  "sheetSize": { "w": 960, "h": 960 },
+  "cell": { "w": 160, "h": 160 },
+  "character": {
+    "pivot": { "x": 80, "y": 136 },
+    "note": "Feet at pivot on ground frames (idle, run, celebrate); jump, fall and airborne celebrate frames rise above it. Character drawn at 0.8 scale, facing right."
+  },
+  "animations": {
+    "idle":      { "row": 0, "frames": 4, "fps": 6,  "loop": true  },
+    "run":       { "row": 1, "frames": 6, "fps": 12, "loop": true  },
+    "jump":      { "row": 2, "frames": 3, "fps": 10, "loop": false },
+    "fall":      { "row": 3, "frames": 2, "fps": 8,  "loop": true  },
+    "celebrate": { "row": 4, "frames": 4, "fps": 8,  "loop": false }
+  },
+  "objects": {
+    "energy_crystal":    { "col": 0, "row": 5 },
+    "checkpoint":        { "col": 1, "row": 5 },
+    "spring_platform":   { "col": 2, "row": 5 },
+    "standard_platform": { "col": 3, "row": 5 },
+    "moving_obstacle":   { "col": 4, "row": 5 },
+    "energy_portal":     { "col": 5, "row": 5 }
+  },
+  "notes": "Frame x = col * 160, frame y = row * 160. Unused cells in rows 0 to 4 are transparent. Object art is drawn inside each cell with at least 10 px margin."
+}
