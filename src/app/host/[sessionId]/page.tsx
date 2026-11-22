@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, use } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabaseClient';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
@@ -11,10 +11,10 @@ export default function HostControl({ params }: { params: { sessionId: string } 
   const sessionId = params.sessionId;
   const router = useRouter();
   const [sessionCode, setSessionCode] = useState('------');
-  const [status, setStatus] = useState<'WAITING' | 'COUNTDOWN' | 'QUESTION_ACTIVE' | 'LEADERBOARD' | 'COMPLETED'>('WAITING');
+  const [status, setStatus] = useState<'WAITING' | 'COUNTDOWN' | 'QUESTION_ACTIVE' | 'QUESTION_RESULT' | 'LEADERBOARD' | 'COMPLETED'>('WAITING');
   const [currentQ, setCurrentQ] = useState(0);
   const [timeLeft, setTimeLeft] = useState(20);
-  const [participants, setParticipants] = useState([]);
+  const [participants, setParticipants] = useState<any[]>([]);
   const [showAnswer, setShowAnswer] = useState(false);
 
   useEffect(() => {

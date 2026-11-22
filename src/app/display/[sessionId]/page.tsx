@@ -14,6 +14,7 @@ const MOCK_LEADERBOARD = [
 ];
 
 export default function ProjectorDisplay({ params }: { params: { sessionId: string } }) {
+  const sessionId = params.sessionId;
   return (
     <div className="min-h-screen bg-gradient-to-br from-navy-darker via-navy-deep to-navy p-12 text-white font-sans flex flex-col">
       <header className="flex justify-between items-center mb-12">
