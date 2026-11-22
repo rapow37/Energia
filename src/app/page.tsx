@@ -17,7 +17,8 @@ export default function Home() {
         return;
       }
 
-      const route = await getDashboardRoute(session.user.id);
+      const metaRole = (session.user as any)?.user_metadata?.role;
+      const route = await getDashboardRoute(session.user.id, metaRole);
       router.replace(route);
     })();
   }, [router]);

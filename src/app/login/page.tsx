@@ -20,7 +20,8 @@ export default function LoginPage() {
     (async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session?.user) {
-        router.replace(await getDashboardRoute(session.user.id));
+        const metaRole = (session.user as any)?.user_metadata?.role;
+        router.replace(await getDashboardRoute(session.user.id, metaRole));
       }
     })();
   }, [router]);
@@ -43,7 +44,8 @@ export default function LoginPage() {
       }
 
       if (data?.user) {
-        router.replace(await getDashboardRoute(data.user.id));
+        const metaRole = (data.user as any)?.user_metadata?.role;
+        router.replace(await getDashboardRoute(data.user.id, metaRole));
       }
     } catch (err: any) {
       setErrorMsg(err.message || 'Terjadi kesalahan saat masuk');

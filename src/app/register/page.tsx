@@ -22,7 +22,8 @@ export default function RegisterPage() {
     (async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session?.user) {
-        router.replace(await getDashboardRoute(session.user.id));
+        const metaRole = (session.user as any)?.user_metadata?.role;
+        router.replace(await getDashboardRoute(session.user.id, metaRole));
       }
     })();
   }, [router]);
@@ -51,7 +52,8 @@ export default function RegisterPage() {
       }
 
       if (data?.session?.user) {
-        router.replace(await getDashboardRoute(data.session.user.id));
+        const metaRole = (data.session.user as any)?.user_metadata?.role;
+        router.replace(await getDashboardRoute(data.session.user.id, metaRole));
       } else if (data?.user) {
         // Email confirmation may be enabled on Supabase project
         setErrorMsg('Akun dibuat. Cek email untuk konfirmasi, lalu masuk.');

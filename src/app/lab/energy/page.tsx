@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
@@ -39,16 +40,14 @@ export default function EnergyLab() {
       const dt = (time - lastTimeRef.current) / 1000;
       
       setState(prev => {
-        // Simplified coaster physics: object follows a U-curve
-        // h(x) = h0 * cos(x) approx
-        // For simplicity in MVP, we simulate a 1D vertical drop then bounce
+        // Drop physics
         let newH = prev.h - (prev.v * dt + 0.5 * GRAVITY * dt * dt);
         let newV = prev.v + GRAVITY * dt;
         
         if (newH <= 0) {
           newH = 0;
-          newV = -newV * (1 - friction); // Bounce back with energy loss
-          if (Math.abs(newV) < 0.5) {
+          newV = -newV * (1 - friction); 
+          if (Math.abs(newV) < 1) {
              setIsRunning(false);
              newV = 0;
           }
@@ -86,97 +85,122 @@ export default function EnergyLab() {
   }, [isRunning]);
 
   return (
-    <div className="min-h-screen bg-surface p-8 font-sans">
+    <div className="min-h-screen bg-surface p-8 font-sans text-navy-deep">
       <div className="max-w-6xl mx-auto space-y-6">
         <header className="flex justify-between items-center">
-          <div>
-            <Badge variant="new">SIMULASI</Badge>
-            <h1 className="font-display font-black text-3xl mt-1">Energy Lab: Roller Coaster</h1>
+          <div className="flex items-center gap-4">
+            <Link href="/student/dashboard">
+              <Button variant="secondary" size="sm">← Kembali</Button>
+            </Link>
+            <div>
+              <Badge variant="new">LAB FISIKA</Badge>
+              <h1 className="font-display font-black text-2xl mt-1">Simulasi Konservasi Energi</h1>
+            </div>
           </div>
           <div className="flex gap-2">
              <Button variant="secondary" onClick={resetSimulation}>Reset</Button>
-             <Button onClick={() => setIsRunning(!isRunning)}>
-               {isRunning ? 'Pause' : 'Mulai Simulasi'}
+             <Button onClick={() => setIsRunning(!isRunning)} variant={isRunning ? 'secondary' : 'primary'}>
+               {isRunning ? 'Berhenti' : 'Mulai Simulasi'}
              </Button>
           </div>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <Card className="lg:col-span-2 h-[400px] relative overflow-hidden bg-navy-darker flex items-end p-0">
-             {/* Coaster Track Illustration */}
-             <svg className="absolute inset-0 w-full h-full opacity-20" preserveAspectRatio="none">
-               <path d="M0 50 Q 300 600 600 400 T 1200 400" stroke="white" strokeWidth="4" fill="none" />
+          <Card className="lg:col-span-2 h-[500px] relative overflow-hidden bg-navy-darker flex items-end p-0 border-none shadow-2xl">
+             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(53,106,230,0.1),transparent)]" />
+             
+             {/* Path */}
+             <svg className="absolute inset-0 w-full h-full opacity-30" preserveAspectRatio="none">
+               <path d="M 0 50 L 600 450 L 1200 450" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8 8" />
              </svg>
              
-             {/* Moving Object */}
+             {/* Object */}
              <div 
-               className="absolute w-10 h-10 bg-orange-accent rounded-lg shadow-[0_0_20px_rgba(255,159,67,0.5)] transition-all duration-75"
+               className="absolute w-12 h-12 bg-orange-accent rounded-2xl shadow-[0_0_30px_rgba(255,159,67,0.6)] flex items-center justify-center text-xl transition-all duration-75"
                style={{ 
-                 bottom: `${(state.h / initialHeight) * 80}%`,
+                 bottom: `${(state.h / 100) * 80 + 10}%`,
                  left: '50%',
                  transform: 'translateX(-50%)'
                }}
-             />
+             >
+               🏀
+             </div>
 
-             <div className="z-10 w-full p-4 bg-navy/80 backdrop-blur-sm text-white grid grid-cols-4 gap-4 text-center">
+             {/* Floor */}
+             <div className="absolute bottom-0 w-full h-[10%] bg-white/5 border-t border-white/10 backdrop-blur-sm" />
+
+             {/* Stats Overlay */}
+             <div className="z-10 w-full p-6 bg-navy/90 backdrop-blur-md border-t border-white/10 text-white grid grid-cols-4 gap-6 text-center">
                 <div>
-                  <div className="text-[10px] text-white/60 uppercase">Tinggi (h)</div>
-                  <div className="font-mono text-xl font-bold">{state.h.toFixed(1)}m</div>
+                  <div className="text-[10px] text-white/50 uppercase font-bold tracking-wider">Tinggi</div>
+                  <div className="font-mono text-2xl font-black">{state.h.toFixed(1)}<span className="text-sm font-normal ml-1">m</span></div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-white/60 uppercase">Kecepatan (v)</div>
-                  <div className="font-mono text-xl font-bold">{state.v.toFixed(1)}m/s</div>
+                  <div className="text-[10px] text-white/50 uppercase font-bold tracking-wider">Kecepatan</div>
+                  <div className="font-mono text-2xl font-black">{state.v.toFixed(1)}<span className="text-sm font-normal ml-1">m/s</span></div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-white/60 uppercase">Energi Potensial</div>
-                  <div className="font-mono text-xl font-bold text-cyan-accent">{(state.ep/1000).toFixed(1)}kJ</div>
+                  <div className="text-[10px] text-white/50 uppercase font-bold tracking-wider text-cyan-accent">E. Potensial</div>
+                  <div className="font-mono text-2xl font-black text-cyan-accent">{(state.ep/1000).toFixed(1)}<span className="text-sm font-normal ml-1">kJ</span></div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-white/60 uppercase">Energi Kinetik</div>
-                  <div className="font-mono text-xl font-bold text-orange-accent">{(state.ek/1000).toFixed(1)}kJ</div>
+                  <div className="text-[10px] text-white/50 uppercase font-bold tracking-wider text-orange-accent">E. Kinetik</div>
+                  <div className="font-mono text-2xl font-black text-orange-accent">{(state.ek/1000).toFixed(1)}<span className="text-sm font-normal ml-1">kJ</span></div>
                 </div>
              </div>
           </Card>
 
-          <Card className="space-y-6">
-            <h2 className="font-display font-bold text-xl">Parameter</h2>
-            
+          <Card className="p-6 space-y-8 bg-white border border-border shadow-card">
             <div className="space-y-4">
-              <div>
-                <label className="text-xs font-bold text-text-muted flex justify-between">
-                  MASSA (m) <span>{mass} kg</span>
-                </label>
-                <input type="range" min="10" max="100" value={mass} onChange={(e) => setMass(Number(e.target.value))} className="w-full mt-2" />
-              </div>
-              <div>
-                <label className="text-xs font-bold text-text-muted flex justify-between">
-                  TINGGI AWAL (h) <span>{initialHeight} m</span>
-                </label>
-                <input type="range" min="10" max="100" value={initialHeight} onChange={(e) => setInitialHeight(Number(e.target.value))} className="w-full mt-2" />
-              </div>
-              <div>
-                <label className="text-xs font-bold text-text-muted flex justify-between">
-                  GESEKAN (f) <span>{(friction * 100).toFixed(0)}%</span>
-                </label>
-                <input type="range" min="0" max="0.5" step="0.01" value={friction} onChange={(e) => setFriction(Number(e.target.value))} className="w-full mt-2" />
+              <h2 className="font-display font-bold text-xl flex items-center gap-2">
+                <span className="p-1.5 rounded-lg bg-surface text-primary text-sm">⚙</span> Parameter
+              </h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between items-end mb-2">
+                    <label className="text-xs font-bold text-navy uppercase tracking-tight">Massa (kg)</label>
+                    <span className="font-mono font-bold text-primary">{mass}</span>
+                  </div>
+                  <input type="range" min="10" max="100" value={mass} onChange={(e) => setMass(Number(e.target.value))} className="w-full h-1.5 bg-surface rounded-lg appearance-none cursor-pointer accent-primary" />
+                </div>
+                <div>
+                  <div className="flex justify-between items-end mb-2">
+                    <label className="text-xs font-bold text-navy uppercase tracking-tight">Tinggi Awal (m)</label>
+                    <span className="font-mono font-bold text-primary">{initialHeight}</span>
+                  </div>
+                  <input type="range" min="10" max="100" value={initialHeight} onChange={(e) => setInitialHeight(Number(e.target.value))} className="w-full h-1.5 bg-surface rounded-lg appearance-none cursor-pointer accent-primary" />
+                </div>
+                <div>
+                  <div className="flex justify-between items-end mb-2">
+                    <label className="text-xs font-bold text-navy uppercase tracking-tight">Gesekan (%)</label>
+                    <span className="font-mono font-bold text-primary">{(friction * 100).toFixed(0)}</span>
+                  </div>
+                  <input type="range" min="0" max="0.5" step="0.01" value={friction} onChange={(e) => setFriction(Number(e.target.value))} className="w-full h-1.5 bg-surface rounded-lg appearance-none cursor-pointer accent-primary" />
+                </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-border">
-               <h3 className="text-sm font-bold mb-3">Analisis Energi</h3>
-               <div className="space-y-2">
-                 <div className="flex justify-between text-xs">
-                   <span>Potensial</span>
-                   <span>{((state.ep/state.em)*100).toFixed(0)}%</span>
+            <div className="pt-6 border-t border-border">
+               <h3 className="text-sm font-bold text-navy mb-4 flex items-center gap-2">
+                 <span className="p-1.5 rounded-lg bg-surface text-orange-accent text-sm">📊</span> Distribusi Energi
+               </h3>
+               <div className="space-y-3">
+                 <div className="h-4 rounded-full bg-surface overflow-hidden flex shadow-inner">
+                   <div className="h-full bg-cyan-accent transition-all duration-200" style={{ width: `${state.em > 0 ? (state.ep/state.em)*100 : 0}%` }} />
+                   <div className="h-full bg-orange-accent transition-all duration-200" style={{ width: `${state.em > 0 ? (state.ek/state.em)*100 : 0}%` }} />
+                   <div className="h-full bg-red-400 transition-all duration-200" style={{ width: `${state.em > 0 ? (state.eth/state.em)*100 : 0}%` }} />
                  </div>
-                 <div className="h-2 rounded-full bg-border overflow-hidden flex">
-                   <div className="h-full bg-cyan-accent" style={{ width: `${(state.ep/state.em)*100}%` }} />
-                   <div className="h-full bg-orange-accent" style={{ width: `${(state.ek/state.em)*100}%` }} />
-                   <div className="h-full bg-red-400" style={{ width: `${(state.eth/state.em)*100}%` }} />
-                 </div>
-                 <div className="flex justify-between text-[10px] text-text-muted">
-                    <span>Mekanik: {(state.em/1000).toFixed(1)}kJ</span>
-                    <span>Termal: {(state.eth/1000).toFixed(1)}kJ</span>
+                 <div className="grid grid-cols-3 gap-2">
+                    <div className="flex items-center gap-1.5 text-[10px] font-bold text-text-muted">
+                      <div className="w-2 h-2 rounded-full bg-cyan-accent" /> EP
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[10px] font-bold text-text-muted">
+                      <div className="w-2 h-2 rounded-full bg-orange-accent" /> EK
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[10px] font-bold text-text-muted">
+                      <div className="w-2 h-2 rounded-full bg-red-400" /> Panas
+                    </div>
                  </div>
                </div>
             </div>
