@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabaseClient';
+import { getDashboardRoute } from '@/lib/auth';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';
@@ -16,6 +17,15 @@ export default function RegisterPage() {
   const [role, setRole] = useState<'student' | 'teacher'>('student');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+
+  useEffect(() => {
+    (async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user) {
+        router.replace(await getDashboardRoute(session.user.id));
+      }
+    })();
+  }, [router]);
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,13 +50,11 @@ export default function RegisterPage() {
         return;
       }
 
-      if (data?.user) {
-        // Redirect based on role
-        if (role === 'teacher') {
-          router.push('/teacher/dashboard');
-        } else {
-          router.push('/student/dashboard');
-        }
+      if (data?.session?.user) {
+        router.replace(await getDashboardRoute(data.session.user.id));
+      } else if (data?.user) {
+        // Email confirmation may be enabled on Supabase project
+        setErrorMsg('Akun dibuat. Cek email untuk konfirmasi, lalu masuk.');
       }
     } catch (err: any) {
       setErrorMsg(err.message || 'Terjadi kesalahan saat pendaftaran');

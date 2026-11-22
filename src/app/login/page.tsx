@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabaseClient';
+import { getDashboardRoute } from '@/lib/auth';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';
@@ -14,6 +15,15 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+
+  useEffect(() => {
+    (async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user) {
+        router.replace(await getDashboardRoute(session.user.id));
+      }
+    })();
+  }, [router]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,18 +43,7 @@ export default function LoginPage() {
       }
 
       if (data?.user) {
-        // Fetch user profile to route correctly (teacher vs student)
-        const { data: profile } = await supabase
-          .from('profiles')
-          .select('role')
-          .eq('id', data.user.id)
-          .single();
-
-        if (profile?.role === 'teacher') {
-          router.push('/teacher/dashboard');
-        } else {
-          router.push('/student/dashboard');
-        }
+        router.replace(await getDashboardRoute(data.user.id));
       }
     } catch (err: any) {
       setErrorMsg(err.message || 'Terjadi kesalahan saat masuk');
